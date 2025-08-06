@@ -44,35 +44,35 @@ const listData = [
     link: "https://ripamustopa.github.io/like-comment1/",
   },
   {
-    fromTo: "50-100",
+    fromTo: "51-100",
     link: "https://ripamustopa.github.io/like-comment2/",
   },
   {
-    fromTo: "100-150",
+    fromTo: "101-150",
     link: "https://ripamustopa.github.io/like-comment3/",
   },
   {
-    fromTo: "150-200",
+    fromTo: "151-200",
     link: "https://ripamustopa.github.io/like-comment4/",
   },
   {
-    fromTo: "200-250",
+    fromTo: "201-250",
     link: "https://ripamustopa.github.io/like-comment5/",
   },
   {
-    fromTo: "250-300",
+    fromTo: "251-300",
     link: "https://ripamustopa.github.io/like-comment6/",
   },
   {
-    fromTo: "300-350",
+    fromTo: "301-350",
     link: "https://ripamustopa.github.io/like-comment7/",
   },
   {
-    fromTo: "350-400",
+    fromTo: "351-400",
     link: "https://ripamustopa.github.io/like-comment8/",
   },
   {
-    fromTo: "400-433",
+    fromTo: "401-433",
     link: "https://ripamustopa.github.io/like-comment9/",
   },
 ];
@@ -219,3 +219,4 @@ AOS.init({
   easing: "ease-out",
   once: true,
 });
+
