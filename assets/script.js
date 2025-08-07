@@ -36,6 +36,78 @@ const followers = [
     title: "mhamd.fhmi16",
     link: "https://www.instagram.com/mhamd.fhmi16?igsh=ajJ4OTA1cG9oamhx",
   },
+  {
+    title: "cahyanarmd_011",
+    link: "https://www.instagram.com/cahyanarmd_011?igsh=MTV1c3JjaTBudGFrZA==",
+  },
+  {
+    title: "dikarahadii",
+    link: "https://www.instagram.com/dikarahadii?igsh=MXM2bTR2MWZsaXlxYg==",
+  },
+  {
+    title: "rifkitresna_027",
+    link: "https://www.instagram.com/rifkitresna_027?igsh=Z2UzeWU1ejk1Yjk0",
+  },
+  {
+    title: "aldiprmnsyyh",
+    link: "https://www.instagram.com/aldiprmnsyyh?igsh=YjltYXZwcHU2emN3",
+  },
+  {
+    title: "fz_yucan",
+    link: "https://www.instagram.com/fz_yucan?igsh=cXpiNjR2eGIzcmR5",
+  },
+  {
+    title: "whoisnuri1",
+    link: "https://www.instagram.com/whoisnuri1?igsh=amFwNWh3bGo4NGVt",
+  },
+  {
+    title: "ftraaa.06",
+    link: "https://www.instagram.com/ftraaa.06?igsh=aHJnMjBvaDZpZnVq",
+  },
+  {
+    title: "aki_aki_kasp",
+    link: "https://www.instagram.com/aki_aki_kasp?igsh=MTB5ZXpvZmc1ZG14MA==",
+  },
+  {
+    title: "_breathesin",
+    link: "https://www.instagram.com/_breathesin?igsh=MTh2b3kycnZseDkyNw==",
+  },
+  {
+    title: "ahii018",
+    link: "https://www.instagram.com/ahii018?igsh=ZGxna2FjazIzbmV6",
+  },
+  {
+    title: "rikinw01",
+    link: "https://www.instagram.com/rikinw01?igsh=MTVxam42OW9qc2xl",
+  },
+  {
+    title: "tegar0805",
+    link: "https://www.instagram.com/tegar0805?igsh=MTg2b3NidjN6ejRtYQ==",
+  },
+  {
+    title: "byalparsk_026",
+    link: "https://www.instagram.com/byalparsk_026?igsh=cTI5eWZ5dDg3dnR4",
+  },
+  {
+    title: "nawawii12_",
+    link: "https://www.instagram.com/nawawii12_?igsh=bjE0Mnc0MDlqNzNn",
+  },
+  {
+    title: "alwafsaquaticbf",
+    link: "https://www.instagram.com/alwafsaquaticbf?igsh=YW80ZXBxdGg5Nzg0",
+  },
+  {
+    title: "dzack_one06",
+    link: "https://www.instagram.com/dzack_one06?igsh=Z2JkNXRpOXp4MzVu",
+  },
+  {
+    title: "diaspurnama07",
+    link: "https://www.instagram.com/diaspurnama07?igsh=dzV6czg3cGtpZHp2",
+  },
+  {
+    title: "wil_da1304",
+    link: "https://www.instagram.com/wil_da1304?igsh=a2J6d2R4cXQybXNs",
+  },
 ];
 // data sidebar
 const listData = [
@@ -172,7 +244,7 @@ const tableFollowers = document.querySelector(".table-followers");
 
 followers.forEach((fll) => {
   const NewData = `
-          <li data-aos="fade-up" class="card-followers">
+          <li class="card-followers">
                 <a href="${fll.link}" class="title-card">
                   <div class="icon-card text-ig"><i class="fa-brands fa-instagram"></i
                 ></div>
@@ -194,7 +266,6 @@ const gallery = document.getElementById("gallery");
 photos.forEach((photo, i) => {
   const galleryItem = document.createElement("div");
   galleryItem.classList.add("gallery-item");
-  // galleryItem.setAttribute("data-aos", "fade-up");
   galleryItem.innerHTML = `
                 <div class="id">${i + 401}</div>
                 <img src="${photo.src} (${i}).jpg" alt="${photo.alt}${i} ">
@@ -214,9 +285,5 @@ document.querySelector(".close").addEventListener("click", () => {
   modal.style.display = "none";
 });
 
-AOS.init({
-  duration: 500,
-  easing: "ease-out",
-  once: true,
-});
+
 
